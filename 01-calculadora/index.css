@@ -1,0 +1,73 @@
+@import url('style.css');
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+#calculadora{
+    font-family: Arial, sans-serif;
+    background-color: #161616;
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0px 30px rgba(255, 223, 0, 0.8), 0 20px 50px rgba(255, 223, 0, 0.6);
+}
+#botones-contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+
+    .btn, .operador-btn{
+        width: 75px;
+        height: 75px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(62,62,62);
+        color: aliceblue;
+        font-size: 3rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover{
+            background-color: rgb(81,81,81);
+        }
+        &:active{
+            background-color: rgb(101,101,101);
+        }
+    }
+    .operador-btn{
+        color: #161616;
+        background-color: rgb(255,248,55);
+
+        &:hover{
+            background-color: rgb(253,248,109);
+        }
+
+        &:active{
+            background-color: rgb(255,253,181);
+        }
+    }
+
+    .full-btn{
+        grid-column: span 4;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+}
+
+#pantalla{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    background-color: #2e2e2e;
+    border: none;
+    color: aliceblue;
+}

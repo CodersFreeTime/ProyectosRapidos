@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="calculadora">
+        <input id="pantalla" readonly>
+        <div id="botones-contenedor">
+            <button class="operador-btn full-btn" onclick="limpiarPantalla()">Clear</button>
+            <button class="btn" onclick="verEnPantalla('7')">7</button>
+            <button class="btn" onclick="verEnPantalla('8')">8</button>
+            <button class="btn" onclick="verEnPantalla('9')">9</button>
+            <button class="operador-btn" onclick="verEnPantalla('+')">+</button>
+            <button class="btn" onclick="verEnPantalla('4')">4</button>
+            <button class="btn" onclick="verEnPantalla('5')">5</button>
+            <button class="btn" onclick="verEnPantalla('6')">6</button>
+            <button class="operador-btn" onclick="verEnPantalla('-')">-</button>
+            <button class="btn" onclick="verEnPantalla('1')">1</button>
+            <button class="btn" onclick="verEnPantalla('2')">2</button>
+            <button class="btn" onclick="verEnPantalla('3')">3</button>
+            <button class="operador-btn" onclick="verEnPantalla('*')">*</button>
+            <button class="btn" onclick="verEnPantalla('.')">.</button>
+            <button class="btn" onclick="verEnPantalla('0')">0</button>
+            <button class="btn" onclick="calcular()">=</button>
+            <button class="operador-btn" onclick="verEnPantalla('/')">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
